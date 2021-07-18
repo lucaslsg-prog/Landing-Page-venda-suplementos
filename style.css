@@ -126,3 +126,9 @@ body{
     color: #0EE;
 }
 
+@media (max-width: 496px){
+    
+    .conteudo div{width:100%;}
+    .produtos div{width:100%;}
+    
+}
