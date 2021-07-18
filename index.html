@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
 
     <title>LP - Black Friday</title>
 </head>
@@ -29,13 +28,13 @@
                 <form class="formulario">
                     <h2>Cadastre-se e fique por dentro das novidades</h2>
                     <label>Digite seu nome aqui</label>
-                    <input type="text" name="nome" placeholder="Nome" required/>
+                    <input id="user-name" type="text" name="nome" placeholder="Nome" required/>
 
                     <label>Digite seu melhor email aqui</label>
-                    <input type="text" name="email" placeholder="E-mail" required/>
+                    <input id="user-email" type="text" name="email" placeholder="E-mail" required/>
 
-                    <label class="destaque">Qual seu objetivo?</label>
-                    <select name="objetivo" required>
+                    <label class="destaque">Qual seu objetivo? (Opcional)</label>
+                    <select name="objetivo">
                         <option>Emagrecer</option>
                         <option>Hipertrofia</option>
                         <option>Ficar igual ao Hulk</option>
@@ -47,7 +46,7 @@
                         </input>
                     </label>
 
-                    <input type="submit" name="enviar"/>
+                    <button id="btn" type="submit" name="enviar" onclick=getValues()>Enviar</button>
                 </form>
             </div>
         </div>
@@ -60,26 +59,28 @@
                 <p>Confira alguns dos produtos</p>
             </div>
             <div class="produtos">
-                <div>
+                <div class ="emagrecimento">
+                    <p style="margin-top: 100px;">Para emagrecimento e perca de calorias</p>
+                    <img src="images/kit-fitness.PNG" alt="Emagrecimento">
                     <p>Kit com termogênico e whey</p>
-                    <img src="images/kit-fitness.PNG" alt="">
-                    <p>Para emagrecimento e perca de calorias - 336,00</p>
+                    <p style="color:yellowgreen;"> Agora por 329,90</p>
+                    
                 </div>
 
-                <div>
+                <div class="hipertrofia">
+                    <p style="margin-top: 100px;">Para ganho de massa e hipertrofia</p>
+                    <img src="images/kit-hipertrofia.jpg" alt="Hipertrofia">
                     <p>Kit com Whey, BCAA e Creatina</p>
-                    <img src="images/kit-hipertrofia.jpg" alt="">
-                    <p>Para ganho de massa e hipertrofia - 299,90</p>
+                    <p style="color:yellowgreen;">Agora por R$289,90</p>
                 </div>
-                
-                <div>
-                    <p>Kit com pre treino, hipercalórico e whey </p>
-                    <img src="images/whey-hulk.jpg" alt="">
-                    <p>Para ficar monstro</p>
-                    <h1>Developed by Lucas Santos Gonçalves</h1>
-    
+                <br>
+                <div class="crescimento">
+                    <p style="margin-top: 100px;">Para ganho de massa muscular</p>
+                    <img src="images/whey-hulk.jpg" alt="Crescimento">
+                    <p>Whey da four plus nutrition</p>
+                    <p style="color:yellowgreen;">Agora por R$189,90</p>
+                    <br>
                 </div>
-                
             </div>
         </div>
     </section>

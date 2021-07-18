@@ -75,8 +75,10 @@ body{
     display: block;
     color: #fff;
 }
-.formulario input[type="submit"]{
+.formulario button[type="submit"]{
     width:80%;
+    color:blueviolet;
+    font-size: 15px;
     margin: 0 auto;
     display: block;
     margin: 20px auto 10px auto;
@@ -91,6 +93,7 @@ body{
 .aceite{font-size:20px;}
 
 .conteudo-bottom{
+    
     padding: 20px;
     max-width:600px;
     overflow:hidden;
@@ -102,23 +105,42 @@ body{
     text-align: center;
     color: #fff;
 }
+.infos p{
+    margin-top: 60px;
+    color: #E3DB14;
+    font-size: 20px;
+}
 .produtos{overflow:hidden;}
 
 .produtos div{
     float:left;
-    width:33%;
+    width:100%;
     box-sizing: border-box;
+    text-align: center;
+    margin: -18px 10px;
+}
+.emagrecimento img{
+    margin: 9px -59px;
+    border:100px;
+    border:#E3DB14 solid 10px;
+
+}
+.hipertrofia img{
+    margin: 9px -59px;
+    border:100px;
+    border:#E3DB14 solid 10px;
+
+}
+.crescimento img{
+    margin: 9px -59px;
+    border:100px;
+    border:#E3DB14 solid 10px;
+
 }
 
 .produtos img {
     display:block;
     margin: 0 auto;
-
-    box-sizing: border-box;
-    border-radius: 200px;
-    margin: 23px 100px;
-    max-width: 100%;
-    width: 200px;
 }
 
 .produtos p{
@@ -129,6 +151,9 @@ body{
 @media (max-width: 496px){
     
     .conteudo div{width:100%;}
-    .produtos div{width:100%;}
+    .emagrecimento img{width:100%;}
+    .hipertrofia img{width:100%;}
+    .crescimento img{width:100%;}
+    
     
 }
