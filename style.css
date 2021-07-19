@@ -39,7 +39,7 @@ body{
 .conteudo img{
     box-sizing: border-box;
     border-radius: 200px;
-    margin: 23px 100px;
+    margin: 19px 103px;
     max-width: 100%;
     width: 200px;
 }
@@ -122,19 +122,19 @@ body{
 .emagrecimento img{
     margin: 9px -59px;
     border:100px;
-    border:#E3DB14 solid 10px;
+    
 
 }
 .hipertrofia img{
     margin: 9px -59px;
     border:100px;
-    border:#E3DB14 solid 10px;
+    
 
 }
 .crescimento img{
     margin: 9px -59px;
     border:100px;
-    border:#E3DB14 solid 10px;
+
 
 }
 
@@ -151,9 +151,26 @@ body{
 @media (max-width: 496px){
     
     .conteudo div{width:100%;}
-    .emagrecimento img{width:100%;}
-    .hipertrofia img{width:100%;}
-    .crescimento img{width:100%;}
+    .conteudo img{
+        width: 82%;
+        margin: 19px 42px;
+    }
+    .emagrecimento img{
+        width:100%;
+        margin: 16px -20px;
+    }
+    .hipertrofia img{
+        width:100%;
+        margin: 16px -20px;
+    }
+    .crescimento img{
+        width:100%;
+        margin: 16px -20px;
+    }
+    .formulario {
+        width:90%;
+        margin: 10px 7px;
+    }
     
     
 }
